@@ -42,6 +42,11 @@ if __name__ == "__main__":
 
 
 if __name__ == "__main__":
-    configuration = configure ()
+    def tables (connection):
+        return [ { "table name": result[0] }
+                 for result in connection.cursor ().execute ("SELECT name FROM sqlite_master WHERE type=\"table\";") ]
 
-    connection = sqlite3.connect (configuration["database"])
+
+    configuration = configure ()
+    connection    = sqlite3.connect (configuration["database"])
+    schema        = { "tables": tables (connection) }
