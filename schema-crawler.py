@@ -64,6 +64,18 @@ def schema_of (configuration):
         return [ foreign_key (info, names_of (cursor)) for info in cursor ]
 
 
+    def hoist_foreign_keys (schema):
+        def constructed (foreign_key, table_name):
+            return { "from table name":  table_name,
+                     "from column name": foreign_key["from column name"],
+                     "to table name":    foreign_key["table name"],
+                     "to column name":   foreign_key["to column name"], }
+
+        return [ constructed (foreign_key, table["table name"])
+                 for table in schema["tables"]
+                 for foreign_key in table["foreign keys"] ]
+
+
     def names_of (cursor):
         return { description[0]: index for ( index, description ) in enumerate (cursor.description) }
 
@@ -90,6 +102,8 @@ def schema_of (configuration):
     for table in schema["tables"]:
         table["columns"]      = columns (table, connection)
         table["foreign keys"] = foreign_keys (table, connection)
+
+    schema["foreign keys"] = hoist_foreign_keys (schema)
 
     return schema
 
