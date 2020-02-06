@@ -67,9 +67,9 @@ def schema_of (configuration):
         def column (info, names):
             return { "column name": info[names["name"]],
                      "type":        info[names["type"]],
-                     "nullable":    info[names["notnull"]] == "1",
+                     "nullable":    info[names["notnull"]] == 0,
                      "default":     None if info[names["dflt_value"]] == "" else info[names["dflt_value"]],
-                     "is pk":       info[names["pk"]] == "1", }
+                     "is pk":       info[names["pk"]] == 1, }
 
         # Technically, there's a SQL injection attack lurking here: we should never use Python string operations to
         # composed SQL statements. However, the underlying DB-API library's parameter substitution mechanism cannot be
