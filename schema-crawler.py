@@ -20,11 +20,15 @@ DEBUGGING = True
 def configure ():
     parser = argparse.ArgumentParser (description = "Collect SQLite3 database schema information.")
 
-    parser.add_argument ("database", help = "paths to SQLite3 database")
+    parser.add_argument ("-p", "--prefix-exclude", help = "exclude tables whose name starts with prefix", action = "append")
+    parser.add_argument ("-e", "--exclude",        help = "exclude tables by name", action = "append")
+    parser.add_argument ("database",               help = "paths to SQLite3 database")
 
     arguments = parser.parse_args ()
 
-    return { "database": arguments.database, }
+    return { "database":         arguments.database,
+             "excludes":         arguments.exclude if arguments.exclude else [ ],
+             "exclude prefixes": arguments.prefix_exclude if arguments.prefix_exclude else [ ], }
 
 # ----------------------------------------
 # MAIN PROCESSING
@@ -79,18 +83,27 @@ if __name__ == "__main__":
         return { description[0]: index for ( index, description ) in enumerate (cursor.description) }
 
 
-    def tables (connection):
+    def tables (connection, configuration):
         cursor = connection.execute ("SELECT name FROM sqlite_master WHERE type=\"table\";")
 
-        return [ { "table name": result[names_of (cursor)["name"]], } for result in cursor ]
+        for result in cursor:
+            table_name = result[names_of (cursor)["name"]]
+
+            if table_name in configuration["excludes"]:
+                pass
+
+            elif any ([ table_name.startswith (prefix) for prefix in configuration["exclude prefixes"] ]):
+                pass
+
+            else:
+                yield { "table name": table_name, }
 
 
     configuration = configure ()
 
     connection = sqlite3.connect (configuration["database"])
-    schema     = { "tables": tables (connection) }
+    schema     = { "tables": list (tables (connection, configuration)) }
 
     for table in schema["tables"]:
         table["columns"]      = columns (table, connection)
         table["foreign keys"] = foreign_keys (table, connection)
-
