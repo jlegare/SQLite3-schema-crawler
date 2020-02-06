@@ -41,11 +41,16 @@ def graph_of (schema):
 
     def graph_table (table):
         def graph_table_name (table):
-            return "<TR><TD BGCOLOR=\"gray\">" + table["table name"] + "</TD></TR>"
+            return "<TR><TD BGCOLOR=\"gray\" COLSPAN=\"2\"><B>" + table["table name"] + "</B></TD></TR>"
 
 
         def graph_column (table_name, column):
-            return "<TR><TD PORT=\"" + table_name + "_" + column["column name"] + "\">" + column["column name"] + "</TD></TR>"
+            return (  "<TR>"
+                    + "<TD PORT=\"" + column["column name"] + "\">"
+                      + (("<I>" + column["column name"] + "</I>") if column["is pk"] else column["column name"])
+                    + "</TD>"
+                    + "<TD>" + column["type"] + "</TD>"
+                    + "</TR>")
 
 
         return (  table["table name"] + " [label=<\n"
