@@ -31,6 +31,37 @@ def configure ():
              "exclude prefixes": arguments.prefix_exclude if arguments.prefix_exclude else [ ], }
 
 
+def graph_of (schema):
+    def graph_foreign_key (foreign_key):
+        return (  foreign_key["from table name"] + ":" + foreign_key["from column name"]
+                + " -> "
+                + foreign_key["to table name"] + ":" + foreign_key["to column name"]
+                + ";")
+
+
+    def graph_table (table):
+        def graph_table_name (table):
+            return "<TR><TD BGCOLOR=\"gray\">" + table["table name"] + "</TD></TR>"
+
+
+        def graph_column (table_name, column):
+            return "<TR><TD PORT=\"" + table_name + "_" + column["column name"] + "\">" + column["column name"] + "</TD></TR>"
+
+
+        return (  table["table name"] + " [label=<\n"
+                + "    <TABLE BORDER=\"0\" CELLBORDER=\"1\" CELLSPACING=\"0\">\n"
+                + "      " + graph_table_name (table) + "\n"
+                + "\n".join ([ ("      " + graph_column (table["table name"], column)) for column in table["columns"] ]) + "\n"
+                + "    </TABLE>>];")
+
+
+    return (  "digraph schema {\n"
+            + "  node[shape=none]\n\n"
+            + "\n".join ([ ("  " + graph_table (table)) for table in schema["tables"] ]) + "\n\n"
+            + "\n".join ([ ("  " + graph_foreign_key (foreign_key)) for foreign_key in schema["foreign keys"] ]) + "\n"
+            + "}")
+
+
 def schema_of (configuration):
     def columns (table, connection):
         def column (info, names):
@@ -127,3 +158,5 @@ if __name__ == "__main__":
     configuration = configure ()
 
     schema = schema_of (configuration)
+
+    print (graph_of (schema))
