@@ -41,7 +41,7 @@ Each of these options takes a single argument, but each option can be specified 
 * if `--prefix-exclude` is specified, the output will not contain tables whose name begins with the specified prefix, otherwise
 * the output will contain every table encountered in the database.
 
-For example, if `db.sqlite3` is a typical (Django)[https://www.djangoproject.com] SQLite3 database, we can consider only the _migrations_ table using
+For example, if `db.sqlite3` is a typical [Django](https://www.djangoproject.com) SQLite3 database, we can consider only the _migrations_ table using
 
 ```
 python schema-crawler.py db.sqlite3 --include django_migrations
