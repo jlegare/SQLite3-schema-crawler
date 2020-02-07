@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="640" scale="75%" viewBox="0.00 0.00 1213.00 654.00">
+  <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 650)">
+    <title>schema</title>
+    <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-650 1209,-650 1209,4 -4,4"/>
+    <!-- django_migrations -->
+    <g id="node1" class="node">
+      <title>django_migrations</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="8.5,-576 8.5,-598 133.5,-598 133.5,-576 8.5,-576"/>
+      <polygon fill="none" stroke="#000000" points="8.5,-576 8.5,-598 133.5,-598 133.5,-576 8.5,-576"/>
+      <text text-anchor="start" x="18.5063" y="-583.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">django_migrations</text>
+      <polygon fill="none" stroke="#000000" points="8.5,-554 8.5,-576 55.5,-576 55.5,-554 8.5,-554"/>
+      <text text-anchor="start" x="26.5547" y="-561.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="55.5,-554 55.5,-576 133.5,-576 133.5,-554 55.5,-554"/>
+      <text text-anchor="start" x="75.0645" y="-560.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="8.5,-532 8.5,-554 55.5,-554 55.5,-532 8.5,-532"/>
+      <text text-anchor="start" x="21.8927" y="-538.4" font-family="Times,serif" font-size="14.00" fill="#000000">app</text>
+      <polygon fill="none" stroke="#000000" points="55.5,-532 55.5,-554 133.5,-554 133.5,-532 55.5,-532"/>
+      <text text-anchor="start" x="58.3569" y="-538.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(255)</text>
+      <polygon fill="none" stroke="#000000" points="8.5,-510 8.5,-532 55.5,-532 55.5,-510 8.5,-510"/>
+      <text text-anchor="start" x="16.8401" y="-516.4" font-family="Times,serif" font-size="14.00" fill="#000000">name</text>
+      <polygon fill="none" stroke="#000000" points="55.5,-510 55.5,-532 133.5,-532 133.5,-510 55.5,-510"/>
+      <text text-anchor="start" x="58.3569" y="-516.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(255)</text>
+      <polygon fill="none" stroke="#000000" points="8.5,-488 8.5,-510 55.5,-510 55.5,-488 8.5,-488"/>
+      <text text-anchor="start" x="11.3948" y="-494.4" font-family="Times,serif" font-size="14.00" fill="#000000">applied</text>
+      <polygon fill="none" stroke="#000000" points="55.5,-488 55.5,-510 133.5,-510 133.5,-488 55.5,-488"/>
+      <text text-anchor="start" x="70.3969" y="-494.4" font-family="Times,serif" font-size="14.00" fill="#000000">datetime</text>
+    </g>
+    <!-- sqlite_sequence -->
+    <g id="node2" class="node">
+      <title>sqlite_sequence</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="167.5,-554 167.5,-576 261.5,-576 261.5,-554 167.5,-554"/>
+      <polygon fill="none" stroke="#000000" points="167.5,-554 167.5,-576 261.5,-576 261.5,-554 167.5,-554"/>
+      <text text-anchor="start" x="170.183" y="-561.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">sqlite_sequence</text>
+      <polygon fill="none" stroke="#000000" points="167.5,-532 167.5,-554 229.5,-554 229.5,-532 167.5,-532"/>
+      <text text-anchor="start" x="183.3401" y="-538.4" font-family="Times,serif" font-size="14.00" fill="#000000">name</text>
+      <polygon fill="none" stroke="#000000" points="229.5,-532 229.5,-554 261.5,-554 261.5,-532 229.5,-532"/>
+      <polygon fill="none" stroke="#000000" points="167.5,-510 167.5,-532 229.5,-532 229.5,-510 167.5,-510"/>
+      <text text-anchor="start" x="189.1704" y="-516.4" font-family="Times,serif" font-size="14.00" fill="#000000">seq</text>
+      <polygon fill="none" stroke="#000000" points="229.5,-510 229.5,-532 261.5,-532 261.5,-510 229.5,-510"/>
+    </g>
+    <!-- auth_group_permissions -->
+    <g id="node3" class="node">
+      <title>auth_group_permissions</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="873.5,-565 873.5,-587 1016.5,-587 1016.5,-565 873.5,-565"/>
+      <polygon fill="none" stroke="#000000" points="873.5,-565 873.5,-587 1016.5,-587 1016.5,-565 873.5,-565"/>
+      <text text-anchor="start" x="876.1767" y="-572.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">auth_group_permissions</text>
+      <polygon fill="none" stroke="#000000" points="873.5,-543 873.5,-565 965.5,-565 965.5,-543 873.5,-543"/>
+      <text text-anchor="start" x="914.0547" y="-550.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="965.5,-543 965.5,-565 1016.5,-565 1016.5,-543 965.5,-543"/>
+      <text text-anchor="start" x="971.5645" y="-549.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="873.5,-521 873.5,-543 965.5,-543 965.5,-521 873.5,-521"/>
+      <text text-anchor="start" x="894.2244" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">group_id</text>
+      <polygon fill="none" stroke="#000000" points="965.5,-521 965.5,-543 1016.5,-543 1016.5,-521 965.5,-521"/>
+      <text text-anchor="start" x="971.5645" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="873.5,-499 873.5,-521 965.5,-521 965.5,-499 873.5,-499"/>
+      <text text-anchor="start" x="879.8366" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">permission_id</text>
+      <polygon fill="none" stroke="#000000" points="965.5,-499 965.5,-521 1016.5,-521 1016.5,-499 965.5,-499"/>
+      <text text-anchor="start" x="971.5645" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+    </g>
+    <!-- auth_permission -->
+    <g id="node8" class="node">
+      <title>auth_permission</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="662.5,-301 662.5,-323 836.5,-323 836.5,-301 662.5,-301"/>
+      <polygon fill="none" stroke="#000000" points="662.5,-301 662.5,-323 836.5,-323 836.5,-301 662.5,-301"/>
+      <text text-anchor="start" x="703.2293" y="-308.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">auth_permission</text>
+      <polygon fill="none" stroke="#000000" points="662.5,-279 662.5,-301 758.5,-301 758.5,-279 662.5,-279"/>
+      <text text-anchor="start" x="705.0547" y="-286.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="758.5,-279 758.5,-301 836.5,-301 836.5,-279 758.5,-279"/>
+      <text text-anchor="start" x="778.0645" y="-285.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="662.5,-257 662.5,-279 758.5,-279 758.5,-257 662.5,-257"/>
+      <text text-anchor="start" x="665.3969" y="-263.4" font-family="Times,serif" font-size="14.00" fill="#000000">content_type_id</text>
+      <polygon fill="none" stroke="#000000" points="758.5,-257 758.5,-279 836.5,-279 836.5,-257 758.5,-257"/>
+      <text text-anchor="start" x="778.0645" y="-263.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="662.5,-235 662.5,-257 758.5,-257 758.5,-235 662.5,-235"/>
+      <text text-anchor="start" x="682.1255" y="-241.4" font-family="Times,serif" font-size="14.00" fill="#000000">codename</text>
+      <polygon fill="none" stroke="#000000" points="758.5,-235 758.5,-257 836.5,-257 836.5,-235 758.5,-235"/>
+      <text text-anchor="start" x="761.3569" y="-241.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(100)</text>
+      <polygon fill="none" stroke="#000000" points="662.5,-213 662.5,-235 758.5,-235 758.5,-213 662.5,-213"/>
+      <text text-anchor="start" x="695.3401" y="-219.4" font-family="Times,serif" font-size="14.00" fill="#000000">name</text>
+      <polygon fill="none" stroke="#000000" points="758.5,-213 758.5,-235 836.5,-235 836.5,-213 758.5,-213"/>
+      <text text-anchor="start" x="761.3569" y="-219.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(255)</text>
+    </g>
+    <!-- auth_group_permissions&#45;&gt;auth_permission -->
+    <g id="edge1" class="edge">
+      <title>auth_group_permissions:permission_id-&gt;auth_permission:id</title>
+      <path fill="none" stroke="#000000" d="M873.5,-510C841.4846,-510 875.6401,-465.6641 856.5,-440 796.846,-360.0128 712.2255,-413.5097 662.5,-327 656.738,-316.9755 650.9489,-302.7557 653.7358,-295.1962"/>
+      <polygon fill="#000000" stroke="#000000" points="655.6832,-298.1106 662.5,-290 652.1132,-292.0894 655.6832,-298.1106"/>
+    </g>
+    <!-- auth_group -->
+    <g id="node10" class="node">
+      <title>auth_group</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="885.5,-279 885.5,-301 999.5,-301 999.5,-279 885.5,-279"/>
+      <polygon fill="none" stroke="#000000" points="885.5,-279 885.5,-301 999.5,-301 999.5,-279 885.5,-279"/>
+      <text text-anchor="start" x="910.6171" y="-286.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">auth_group</text>
+      <polygon fill="none" stroke="#000000" points="885.5,-257 885.5,-279 921.5,-279 921.5,-257 885.5,-257"/>
+      <text text-anchor="start" x="898.0547" y="-264.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="921.5,-257 921.5,-279 999.5,-279 999.5,-257 921.5,-257"/>
+      <text text-anchor="start" x="941.0645" y="-263.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="885.5,-235 885.5,-257 921.5,-257 921.5,-235 885.5,-235"/>
+      <text text-anchor="start" x="888.3401" y="-241.4" font-family="Times,serif" font-size="14.00" fill="#000000">name</text>
+      <polygon fill="none" stroke="#000000" points="921.5,-235 921.5,-257 999.5,-257 999.5,-235 921.5,-235"/>
+      <text text-anchor="start" x="924.3569" y="-241.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(150)</text>
+    </g>
+    <!-- auth_group_permissions&#45;&gt;auth_group -->
+    <g id="edge2" class="edge">
+      <title>auth_group_permissions:group_id-&gt;auth_group:id</title>
+      <path fill="none" stroke="#000000" d="M873.5,-532C846.8892,-532 854.2499,-315.1797 877.7191,-274.5259"/>
+      <polygon fill="#000000" stroke="#000000" points="880.0872,-277.1078 885.5,-268 875.5889,-271.7444 880.0872,-277.1078"/>
+    </g>
+    <!-- auth_user_groups -->
+    <g id="node4" class="node">
+      <title>auth_user_groups</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="734.5,-565 734.5,-587 839.5,-587 839.5,-565 734.5,-565"/>
+      <polygon fill="none" stroke="#000000" points="734.5,-565 734.5,-587 839.5,-587 839.5,-565 734.5,-565"/>
+      <text text-anchor="start" x="737.2349" y="-572.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">auth_user_groups</text>
+      <polygon fill="none" stroke="#000000" points="734.5,-543 734.5,-565 792.5,-565 792.5,-543 734.5,-543"/>
+      <text text-anchor="start" x="758.0547" y="-550.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="792.5,-543 792.5,-565 839.5,-565 839.5,-543 792.5,-543"/>
+      <text text-anchor="start" x="796.5645" y="-549.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="734.5,-521 734.5,-543 792.5,-543 792.5,-521 734.5,-521"/>
+      <text text-anchor="start" x="742.8948" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">user_id</text>
+      <polygon fill="none" stroke="#000000" points="792.5,-521 792.5,-543 839.5,-543 839.5,-521 792.5,-521"/>
+      <text text-anchor="start" x="796.5645" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="734.5,-499 734.5,-521 792.5,-521 792.5,-499 734.5,-499"/>
+      <text text-anchor="start" x="738.2244" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">group_id</text>
+      <polygon fill="none" stroke="#000000" points="792.5,-499 792.5,-521 839.5,-521 839.5,-499 792.5,-499"/>
+      <text text-anchor="start" x="796.5645" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+    </g>
+    <!-- auth_user -->
+    <g id="node9" class="node">
+      <title>auth_user</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="475.5,-378 475.5,-400 628.5,-400 628.5,-378 475.5,-378"/>
+      <polygon fill="none" stroke="#000000" points="475.5,-378 475.5,-400 628.5,-400 628.5,-378 475.5,-378"/>
+      <text text-anchor="start" x="524.7875" y="-385.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">auth_user</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-356 475.5,-378 550.5,-378 550.5,-356 475.5,-356"/>
+      <text text-anchor="start" x="507.5547" y="-363.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-356 550.5,-378 628.5,-378 628.5,-356 550.5,-356"/>
+      <text text-anchor="start" x="570.0645" y="-362.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-334 475.5,-356 550.5,-356 550.5,-334 475.5,-334"/>
+      <text text-anchor="start" x="486.5645" y="-340.4" font-family="Times,serif" font-size="14.00" fill="#000000">password</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-334 550.5,-356 628.5,-356 628.5,-334 550.5,-334"/>
+      <text text-anchor="start" x="553.3569" y="-340.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(128)</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-312 475.5,-334 550.5,-334 550.5,-312 475.5,-312"/>
+      <text text-anchor="start" x="485.3892" y="-318.4" font-family="Times,serif" font-size="14.00" fill="#000000">last_login</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-312 550.5,-334 628.5,-334 628.5,-312 550.5,-312"/>
+      <text text-anchor="start" x="565.3969" y="-318.4" font-family="Times,serif" font-size="14.00" fill="#000000">datetime</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-290 475.5,-312 550.5,-312 550.5,-290 475.5,-290"/>
+      <text text-anchor="start" x="478.0126" y="-296.4" font-family="Times,serif" font-size="14.00" fill="#000000">is_superuser</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-290 550.5,-312 628.5,-312 628.5,-290 550.5,-290"/>
+      <text text-anchor="start" x="577.0547" y="-296.4" font-family="Times,serif" font-size="14.00" fill="#000000">bool</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-268 475.5,-290 550.5,-290 550.5,-268 475.5,-268"/>
+      <text text-anchor="start" x="486.1802" y="-274.4" font-family="Times,serif" font-size="14.00" fill="#000000">username</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-268 550.5,-290 628.5,-290 628.5,-268 550.5,-268"/>
+      <text text-anchor="start" x="553.3569" y="-274.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(150)</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-246 475.5,-268 550.5,-268 550.5,-246 475.5,-246"/>
+      <text text-anchor="start" x="483.0666" y="-252.4" font-family="Times,serif" font-size="14.00" fill="#000000">first_name</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-246 550.5,-268 628.5,-268 628.5,-246 550.5,-246"/>
+      <text text-anchor="start" x="556.8569" y="-252.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(30)</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-224 475.5,-246 550.5,-246 550.5,-224 475.5,-224"/>
+      <text text-anchor="start" x="497.4495" y="-230.4" font-family="Times,serif" font-size="14.00" fill="#000000">email</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-224 550.5,-246 628.5,-246 628.5,-224 550.5,-224"/>
+      <text text-anchor="start" x="553.3569" y="-230.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(254)</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-202 475.5,-224 550.5,-224 550.5,-202 475.5,-202"/>
+      <text text-anchor="start" x="492.3969" y="-208.4" font-family="Times,serif" font-size="14.00" fill="#000000">is_staff</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-202 550.5,-224 628.5,-224 628.5,-202 550.5,-202"/>
+      <text text-anchor="start" x="577.0547" y="-208.4" font-family="Times,serif" font-size="14.00" fill="#000000">bool</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-180 475.5,-202 550.5,-202 550.5,-180 475.5,-180"/>
+      <text text-anchor="start" x="488.1199" y="-186.4" font-family="Times,serif" font-size="14.00" fill="#000000">is_active</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-180 550.5,-202 628.5,-202 628.5,-180 550.5,-180"/>
+      <text text-anchor="start" x="577.0547" y="-186.4" font-family="Times,serif" font-size="14.00" fill="#000000">bool</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-158 475.5,-180 550.5,-180 550.5,-158 475.5,-158"/>
+      <text text-anchor="start" x="480.3422" y="-164.4" font-family="Times,serif" font-size="14.00" fill="#000000">date_joined</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-158 550.5,-180 628.5,-180 628.5,-158 550.5,-158"/>
+      <text text-anchor="start" x="565.3969" y="-164.4" font-family="Times,serif" font-size="14.00" fill="#000000">datetime</text>
+      <polygon fill="none" stroke="#000000" points="475.5,-136 475.5,-158 550.5,-158 550.5,-136 475.5,-136"/>
+      <text text-anchor="start" x="484.6199" y="-142.4" font-family="Times,serif" font-size="14.00" fill="#000000">last_name</text>
+      <polygon fill="none" stroke="#000000" points="550.5,-136 550.5,-158 628.5,-158 628.5,-136 550.5,-136"/>
+      <text text-anchor="start" x="553.3569" y="-142.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(150)</text>
+    </g>
+    <!-- auth_user_groups&#45;&gt;auth_user -->
+    <g id="edge4" class="edge">
+      <title>auth_user_groups:user_id-&gt;auth_user:id</title>
+      <path fill="none" stroke="#000000" d="M734.5,-532C692.8359,-532 746.6154,-468.7918 716.5,-440 638.2198,-365.1602 546.1965,-486.0414 475.5,-404 467.7006,-394.949 462.5538,-379.5182 466.6295,-371.7562"/>
+      <polygon fill="#000000" stroke="#000000" points="468.3408,-374.81 475.5,-367 465.033,-368.6409 468.3408,-374.81"/>
+    </g>
+    <!-- auth_user_groups&#45;&gt;auth_group -->
+    <g id="edge3" class="edge">
+      <title>auth_user_groups:group_id-&gt;auth_group:id</title>
+      <path fill="none" stroke="#000000" d="M763.5,-499C763.5,-440.8389 825.8852,-455.1873 853.5,-404 881.1975,-352.6593 830.2929,-277.7531 875.5124,-268.8707"/>
+      <polygon fill="#000000" stroke="#000000" points="875.8418,-272.3553 885.5,-268 875.2338,-265.3818 875.8418,-272.3553"/>
+    </g>
+    <!-- auth_user_user_permissions -->
+    <g id="node5" class="node">
+      <title>auth_user_user_permissions</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="535.5,-565 535.5,-587 699.5,-587 699.5,-565 535.5,-565"/>
+      <polygon fill="none" stroke="#000000" points="535.5,-565 535.5,-587 699.5,-587 699.5,-565 535.5,-565"/>
+      <text text-anchor="start" x="538.1872" y="-572.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">auth_user_user_permissions</text>
+      <polygon fill="none" stroke="#000000" points="535.5,-543 535.5,-565 637.5,-565 637.5,-543 535.5,-543"/>
+      <text text-anchor="start" x="581.0547" y="-550.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="637.5,-543 637.5,-565 699.5,-565 699.5,-543 637.5,-543"/>
+      <text text-anchor="start" x="649.0645" y="-549.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="535.5,-521 535.5,-543 637.5,-543 637.5,-521 535.5,-521"/>
+      <text text-anchor="start" x="565.8948" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">user_id</text>
+      <polygon fill="none" stroke="#000000" points="637.5,-521 637.5,-543 699.5,-543 699.5,-521 637.5,-521"/>
+      <text text-anchor="start" x="649.0645" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="535.5,-499 535.5,-521 637.5,-521 637.5,-499 535.5,-499"/>
+      <text text-anchor="start" x="546.8366" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">permission_id</text>
+      <polygon fill="none" stroke="#000000" points="637.5,-499 637.5,-521 699.5,-521 699.5,-499 637.5,-499"/>
+      <text text-anchor="start" x="649.0645" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+    </g>
+    <!-- auth_user_user_permissions&#45;&gt;auth_permission -->
+    <g id="edge5" class="edge">
+      <title>auth_user_user_permissions:permission_id-&gt;auth_permission:id</title>
+      <path fill="none" stroke="#000000" d="M586.5,-499C586.5,-449.5307 627.4273,-450.4299 644.5,-404 652.072,-383.4077 641.0924,-314.6193 653.8169,-295.1653"/>
+      <polygon fill="#000000" stroke="#000000" points="655.6951,-298.1206 662.5,-290 652.1163,-292.1045 655.6951,-298.1206"/>
+    </g>
+    <!-- auth_user_user_permissions&#45;&gt;auth_user -->
+    <g id="edge6" class="edge">
+      <title>auth_user_user_permissions:user_id-&gt;auth_user:id</title>
+      <path fill="none" stroke="#000000" d="M535.5,-532C514.6679,-532 527.9898,-457.9983 517.5,-440 505.1203,-418.7589 485.7732,-426.3362 475.5,-404 470.7759,-393.7288 464.7749,-380.0922 466.8292,-372.5724"/>
+      <polygon fill="#000000" stroke="#000000" points="468.9797,-375.3508 475.5,-367 465.1952,-369.4621 468.9797,-375.3508"/>
+    </g>
+    <!-- django_admin_log -->
+    <g id="node6" class="node">
+      <title>django_admin_log</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="296.5,-620 296.5,-642 501.5,-642 501.5,-620 296.5,-620"/>
+      <polygon fill="none" stroke="#000000" points="296.5,-620 296.5,-642 501.5,-642 501.5,-620 296.5,-620"/>
+      <text text-anchor="start" x="346.5042" y="-627.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">django_admin_log</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-598 296.5,-620 396.5,-620 396.5,-598 296.5,-598"/>
+      <text text-anchor="start" x="341.0547" y="-605.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-598 396.5,-620 501.5,-620 501.5,-598 396.5,-598"/>
+      <text text-anchor="start" x="429.5645" y="-604.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-576 296.5,-598 396.5,-598 396.5,-576 296.5,-576"/>
+      <text text-anchor="start" x="313.4516" y="-582.4" font-family="Times,serif" font-size="14.00" fill="#000000">action_time</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-576 396.5,-598 501.5,-598 501.5,-576 396.5,-576"/>
+      <text text-anchor="start" x="424.8969" y="-582.4" font-family="Times,serif" font-size="14.00" fill="#000000">datetime</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-554 296.5,-576 396.5,-576 396.5,-554 296.5,-554"/>
+      <text text-anchor="start" x="320.4495" y="-560.4" font-family="Times,serif" font-size="14.00" fill="#000000">object_id</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-554 396.5,-576 501.5,-576 501.5,-554 396.5,-554"/>
+      <text text-anchor="start" x="438.5021" y="-560.4" font-family="Times,serif" font-size="14.00" fill="#000000">text</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-532 296.5,-554 396.5,-554 396.5,-532 296.5,-532"/>
+      <text text-anchor="start" x="314.6269" y="-538.4" font-family="Times,serif" font-size="14.00" fill="#000000">object_repr</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-532 396.5,-554 501.5,-554 501.5,-532 396.5,-532"/>
+      <text text-anchor="start" x="412.8569" y="-538.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(200)</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-510 296.5,-532 396.5,-532 396.5,-510 296.5,-510"/>
+      <text text-anchor="start" x="299.4663" y="-516.4" font-family="Times,serif" font-size="14.00" fill="#000000">change_message</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-510 396.5,-532 501.5,-532 501.5,-510 396.5,-510"/>
+      <text text-anchor="start" x="438.5021" y="-516.4" font-family="Times,serif" font-size="14.00" fill="#000000">text</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-488 296.5,-510 396.5,-510 396.5,-488 296.5,-488"/>
+      <text text-anchor="start" x="301.3969" y="-494.4" font-family="Times,serif" font-size="14.00" fill="#000000">content_type_id</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-488 396.5,-510 501.5,-510 501.5,-488 396.5,-488"/>
+      <text text-anchor="start" x="429.5645" y="-494.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-466 296.5,-488 396.5,-488 396.5,-466 296.5,-466"/>
+      <text text-anchor="start" x="325.8948" y="-472.4" font-family="Times,serif" font-size="14.00" fill="#000000">user_id</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-466 396.5,-488 501.5,-488 501.5,-466 396.5,-466"/>
+      <text text-anchor="start" x="429.5645" y="-472.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="296.5,-444 296.5,-466 396.5,-466 396.5,-444 296.5,-444"/>
+      <text text-anchor="start" x="315.0119" y="-450.4" font-family="Times,serif" font-size="14.00" fill="#000000">action_flag</text>
+      <polygon fill="none" stroke="#000000" points="396.5,-444 396.5,-466 501.5,-466 501.5,-444 396.5,-444"/>
+      <text text-anchor="start" x="399.419" y="-450.4" font-family="Times,serif" font-size="14.00" fill="#000000">smallint unsigned</text>
+    </g>
+    <!-- django_content_type -->
+    <g id="node7" class="node">
+      <title>django_content_type</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="513.5,-70 513.5,-92 651.5,-92 651.5,-70 513.5,-70"/>
+      <polygon fill="none" stroke="#000000" points="513.5,-70 513.5,-92 651.5,-92 651.5,-70 513.5,-70"/>
+      <text text-anchor="start" x="523.7896" y="-77.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">django_content_type</text>
+      <polygon fill="none" stroke="#000000" points="513.5,-48 513.5,-70 573.5,-70 573.5,-48 513.5,-48"/>
+      <text text-anchor="start" x="538.0547" y="-55.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">id</text>
+      <polygon fill="none" stroke="#000000" points="573.5,-48 573.5,-70 651.5,-70 651.5,-48 573.5,-48"/>
+      <text text-anchor="start" x="593.0645" y="-54.4" font-family="Times,serif" font-size="14.00" fill="#000000">integer</text>
+      <polygon fill="none" stroke="#000000" points="513.5,-26 513.5,-48 573.5,-48 573.5,-26 513.5,-26"/>
+      <text text-anchor="start" x="516.2875" y="-32.4" font-family="Times,serif" font-size="14.00" fill="#000000">app_label</text>
+      <polygon fill="none" stroke="#000000" points="573.5,-26 573.5,-48 651.5,-48 651.5,-26 573.5,-26"/>
+      <text text-anchor="start" x="576.3569" y="-32.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(100)</text>
+      <polygon fill="none" stroke="#000000" points="513.5,-4 513.5,-26 573.5,-26 573.5,-4 513.5,-4"/>
+      <text text-anchor="start" x="526.0021" y="-10.4" font-family="Times,serif" font-size="14.00" fill="#000000">model</text>
+      <polygon fill="none" stroke="#000000" points="573.5,-4 573.5,-26 651.5,-26 651.5,-4 573.5,-4"/>
+      <text text-anchor="start" x="576.3569" y="-10.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(100)</text>
+    </g>
+    <!-- django_admin_log&#45;&gt;django_content_type -->
+    <g id="edge8" class="edge">
+      <title>django_admin_log:content_type_id-&gt;django_content_type:id</title>
+      <path fill="none" stroke="#000000" d="M296.5,-499C270.2778,-499 290.2457,-465.4654 296.5,-440 342.1621,-254.0781 319.4617,-65.7405 503.4252,-59.1767"/>
+      <polygon fill="#000000" stroke="#000000" points="503.5629,-62.6749 513.5,-59 503.4401,-55.676 503.5629,-62.6749"/>
+    </g>
+    <!-- django_admin_log&#45;&gt;auth_user -->
+    <g id="edge7" class="edge">
+      <title>django_admin_log:user_id-&gt;auth_user:id</title>
+      <path fill="none" stroke="#000000" d="M296.5,-477C280.0556,-477 286.5972,-453.1284 296.5,-440 331.5724,-393.5035 369.9031,-429.0113 422.5,-404 444.9982,-393.3015 446.7291,-373.3337 465.5265,-368.2184"/>
+      <polygon fill="#000000" stroke="#000000" points="465.9983,-371.6869 475.5,-367 465.1493,-364.7386 465.9983,-371.6869"/>
+    </g>
+    <!-- auth_permission&#45;&gt;django_content_type -->
+    <g id="edge9" class="edge">
+      <title>auth_permission:content_type_id-&gt;django_content_type:id</title>
+      <path fill="none" stroke="#000000" d="M662.5,-268C632.0142,-268 664.5353,-154.9776 644.5,-132 604.8178,-86.4901 550.1042,-144.0204 513.5,-96 506.3348,-86.6001 500.9743,-71.5983 504.6318,-63.9033"/>
+      <polygon fill="#000000" stroke="#000000" points="506.4422,-66.9018 513.5,-59 503.055,-60.7758 506.4422,-66.9018"/>
+    </g>
+    <!-- django_session -->
+    <g id="node11" class="node">
+      <title>django_session</title>
+      <polygon fill="#c0c0c0" stroke="transparent" points="1050.5,-565 1050.5,-587 1197.5,-587 1197.5,-565 1050.5,-565"/>
+      <polygon fill="none" stroke="#000000" points="1050.5,-565 1050.5,-587 1197.5,-587 1197.5,-565 1050.5,-565"/>
+      <text text-anchor="start" x="1081.2279" y="-572.4" font-family="Times,serif" font-weight="bold" font-size="14.00" fill="#000000">django_session</text>
+      <polygon fill="none" stroke="#000000" points="1050.5,-543 1050.5,-565 1126.5,-565 1126.5,-543 1050.5,-543"/>
+      <text text-anchor="start" x="1054.6732" y="-550.4" font-family="Times,serif" font-style="italic" font-size="14.00" fill="#000000">session_key</text>
+      <polygon fill="none" stroke="#000000" points="1126.5,-543 1126.5,-565 1197.5,-565 1197.5,-543 1126.5,-543"/>
+      <text text-anchor="start" x="1129.3569" y="-549.4" font-family="Times,serif" font-size="14.00" fill="#000000">varchar(40)</text>
+      <polygon fill="none" stroke="#000000" points="1050.5,-521 1050.5,-543 1126.5,-543 1126.5,-521 1050.5,-521"/>
+      <text text-anchor="start" x="1053.1206" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">session_data</text>
+      <polygon fill="none" stroke="#000000" points="1126.5,-521 1126.5,-543 1197.5,-543 1197.5,-521 1126.5,-521"/>
+      <text text-anchor="start" x="1151.5021" y="-527.4" font-family="Times,serif" font-size="14.00" fill="#000000">text</text>
+      <polygon fill="none" stroke="#000000" points="1050.5,-499 1050.5,-521 1126.5,-521 1126.5,-499 1050.5,-499"/>
+      <text text-anchor="start" x="1055.8499" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">expire_date</text>
+      <polygon fill="none" stroke="#000000" points="1126.5,-499 1126.5,-521 1197.5,-521 1197.5,-499 1126.5,-499"/>
+      <text text-anchor="start" x="1137.8969" y="-505.4" font-family="Times,serif" font-size="14.00" fill="#000000">datetime</text>
+    </g>
+  </g>
+</svg>
