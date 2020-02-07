@@ -20,15 +20,19 @@ DEBUGGING = True
 def configure ():
     parser = argparse.ArgumentParser (description = "Collect SQLite3 database schema information.")
 
-    parser.add_argument ("-p", "--prefix-exclude", help = "exclude tables whose name starts with prefix", action = "append")
-    parser.add_argument ("-e", "--exclude",        help = "exclude tables by name", action = "append")
-    parser.add_argument ("database",               help = "path to SQLite3 database")
+    parser.add_argument ("--exclude",        help = "exclude tables by name", action = "append")
+    parser.add_argument ("--include",        help = "include tables by name", action = "append")
+    parser.add_argument ("--prefix-exclude", help = "exclude tables whose name starts with prefix", action = "append")
+    parser.add_argument ("--prefix-include", help = "include tables whose name starts with prefix", action = "append")
+    parser.add_argument ("database",         help = "path to SQLite3 database")
 
     arguments = parser.parse_args ()
 
     return { "database":         arguments.database,
              "excludes":         arguments.exclude if arguments.exclude else [ ],
-             "exclude prefixes": arguments.prefix_exclude if arguments.prefix_exclude else [ ], }
+             "includes":         arguments.include if arguments.include else [ ],
+             "exclude prefixes": arguments.prefix_exclude if arguments.prefix_exclude else [ ],
+             "include prefixes": arguments.prefix_include if arguments.prefix_include else [ ], }
 
 
 def graph_of (schema):
@@ -122,14 +126,24 @@ def schema_of (configuration):
         for result in cursor:
             table_name = result[names_of (cursor)["name"]]
 
-            if table_name in configuration["excludes"]:
-                pass
-
-            elif any ([ table_name.startswith (prefix) for prefix in configuration["exclude prefixes"] ]):
-                pass
+            if configuration["includes"]:
+                if table_name in configuration["includes"]:
+                    yield { "table name": table_name, }
 
             else:
-                yield { "table name": table_name, }
+                if configuration["include prefixes"]:
+                    if any ([ table_name.startswith (prefix) for prefix in configuration["include prefixes"] ]):
+                        yield { "table name": table_name, }
+
+                else:
+                    if table_name in configuration["excludes"]:
+                        pass
+
+                    elif any ([ table_name.startswith (prefix) for prefix in configuration["exclude prefixes"] ]):
+                        pass
+
+                    else:
+                        yield { "table name": table_name, }
 
 
     connection = sqlite3.connect (configuration["database"])
