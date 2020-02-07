@@ -24,7 +24,11 @@ def configure ():
     parser.add_argument ("--include",        help = "include tables by name", action = "append")
     parser.add_argument ("--prefix-exclude", help = "exclude tables whose name starts with prefix", action = "append")
     parser.add_argument ("--prefix-include", help = "include tables whose name starts with prefix", action = "append")
-    parser.add_argument ("database",         help = "path to SQLite3 database")
+
+    parser.add_argument ("--debug-dump-schema", help = "dump a JSON representation of the accumulated schema and exit",
+                         action = "store_true")
+
+    parser.add_argument ("database", help = "path to SQLite3 database")
 
     arguments = parser.parse_args ()
 
@@ -32,7 +36,8 @@ def configure ():
              "excludes":         arguments.exclude if arguments.exclude else [ ],
              "includes":         arguments.include if arguments.include else [ ],
              "exclude prefixes": arguments.prefix_exclude if arguments.prefix_exclude else [ ],
-             "include prefixes": arguments.prefix_include if arguments.prefix_include else [ ], }
+             "include prefixes": arguments.prefix_include if arguments.prefix_include else [ ],
+             "debug dump schema": arguments.debug_dump_schema, }
 
 
 def graph_of (schema):
@@ -178,4 +183,8 @@ if __name__ == "__main__":
 
     schema = schema_of (configuration)
 
-    print (graph_of (schema))
+    if configuration["debug dump schema"]:
+        print (json.dumps (schema, indent = 4))
+
+    else:
+        print (graph_of (schema))
