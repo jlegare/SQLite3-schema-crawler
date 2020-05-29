@@ -1,6 +1,6 @@
 # SQLite3 Schema Crawler
 
-Generate a [GraphViz](https://graphviz.gitlab.io) dot file give a [SQLite3](https://www.sqlite.org/index.html) schema.
+Generate a [GraphViz](https://graphviz.gitlab.io) dot file given a [SQLite3](https://www.sqlite.org/index.html) schema.
 
 ## Table of Contents
 
